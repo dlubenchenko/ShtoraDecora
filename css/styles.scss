@@ -57,8 +57,8 @@ body {
 		&__navigation {}
 		&__favorites {}
         &_sticky {
-            // position: sticky; 
-            // top: 0;
+            position: sticky; 
+            top: 0;
         }
         background-color: $black1;
         color: $white1;
@@ -176,6 +176,7 @@ body {
             gap: 2.25rem;
         }
 		&__item {
+            z-index: -1;
             &_active {
                 grid-column: 2/4;
                 display: flex;
@@ -381,9 +382,11 @@ body {
 		&__item {
             &_round {
                 overflow: hidden;
+                border: .4rem double $black1;
                 border-radius: 50%;
                 width: 8rem;
                 height: 8rem;
+                margin-bottom: 1rem;
             }
 			&_img {
                 width: 10rem;
@@ -391,15 +394,195 @@ body {
                 padding-bottom: 5rem;
                 object-fit: cover;
             }
-			&_rate {}
-			&_review {}
-			&_name {}
-            justify-self: center;
+			&_rate {
+                margin-bottom: 2.25rem;
+            }
+			&_review {
+                color: $black1;
+                text-align: center;
+                font-family: Lato;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.75rem;
+                margin-bottom: 2.25rem;
+            }
+			&_name {
+                @include content-text;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 		}
 }
 .footer {
-		&__container {}
-		&__header {}
-		&__subheader {}
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__header {
+        @include headers-text;
+        color: $black7;
+        text-align: center;
+        margin: 7rem 0 5rem 0;
+    }
+    &__contacts {
+        color: $white2;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        margin-bottom: 5rem;
+    }
+    background-color: $black1;
+}
+.contacts {
+    &__item {
+        width: 8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    &__link {}
+    &__image {
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+    &__text {}
 }
 
+
+
+
+
+
+
+@media all and (max-width: 1279px) {
+    .wrapper {
+    }
+    .header {
+            &_sticky {}
+            &__container {}
+            &__logo {}
+            &__navigation {}
+            &__favorites {}
+    }
+    .flex {
+    }
+    .logo {
+            &__image {
+                &_width {}
+            }
+            &__content {}
+            &__header {}
+            &__text {}
+    }
+    .navigation {
+            &__body {}
+            &__item {}
+            &__link {
+                &_active {}
+            }
+    }
+    .favorites {
+            &__liked {}
+            &__image {}
+            &__text {}
+    }
+    .content {
+    }
+    .welcome {
+            &__container {}
+            &__body {
+                &_text {}
+                &_title {}
+                &_line {}
+                &_subtext {}
+            }
+    }
+    .popular {
+            &__container {}
+            &__body {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+            &__item {
+                grid-row: 2/3;
+                &_active {
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                }
+            }
+            &__image {
+                &_position {}
+            }
+            &__content {
+                &_header {}
+                &_text {}
+                &_link {}
+            }
+    }
+    .grid {
+    }
+    .featured {
+            &__container {}
+            &__header {}
+            &__menu {
+                &_item {}
+                &_item {}
+            }
+            &__shop {
+                grid-template-columns: repeat(2, 1fr);
+            }
+    }
+    .shop {
+            &__item {
+                &_img {}
+                &_product {}
+                &_rate {}
+                &_price {}
+            }
+            &__content {}
+    }
+    .why {
+            &__container {}
+            &__header {}
+            &__body {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            &__item {
+                &_img {}
+                &_header {}
+                &_text {}
+            }
+    }
+    .reviews {
+            &__container {}
+            &__header {}
+            &__subheader {}
+            &__body {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            &__item {
+                &_round {}
+                &_img {}
+                &_rate {}
+                &_review {}
+                &_name {}
+            }
+    }
+    .footer {
+            &__container {}
+            &__header {}
+            &__contacts {}
+    }
+    .contacts {
+            &__item {}
+            &__link {}
+            &__image {}
+            &__text {}
+    }
+    
+}
