@@ -441,6 +441,7 @@ body {
         width: 8rem;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -459,7 +460,7 @@ body {
 
 
 
-@media all and (max-width: 1279px) {
+@media (min-width: 991px) and (max-width: 1279px) {
     .wrapper {
     }
     .header {
@@ -564,6 +565,143 @@ body {
             &__subheader {}
             &__body {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            &__item {
+                &_round {}
+                &_img {}
+                &_rate {}
+                &_review {}
+                &_name {}
+            }
+    }
+    .footer {
+            &__container {}
+            &__header {}
+            &__contacts {}
+    }
+    .contacts {
+            &__item {}
+            &__link {}
+            &__image {}
+            &__text {}
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 991px) {
+    .wrapper {
+    }
+    .header {
+            &_sticky {}
+            &__container {}
+            &__logo {}
+            &__navigation {}
+            &__favorites {}
+    }
+    .flex {
+    }
+    .logo {
+            &__image {
+                &_width {}
+            }
+            &__content {
+                display: none;
+            }
+            &__header {}
+            &__text {}
+    }
+    .navigation {
+            &__body {}
+            &__item {}
+            &__link {
+                &_active {}
+            }
+    }
+    .favorites {
+            &__liked {}
+            &__image {}
+            &__text {
+                display: none;
+            }
+    }
+    .content {
+    }
+    .welcome {
+            &__container {}
+            &__body {
+                &_text {}
+                &_title {}
+                &_line {}
+                &_subtext {}
+            }
+    }
+    .popular {
+            &__container {}
+            &__body {
+                grid-template: 1fr / 3fr;
+            }
+            &__item {
+                &_active {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+            }
+            &__image {
+                &_position {}
+            }
+            &__content {
+                &_header {}
+                &_text {}
+                &_link {}
+            }
+    }
+    .grid {
+    }
+    .featured {
+            &__container {}
+            &__header {}
+            &__menu {
+                &_item {}
+                &_item {}
+            }
+            &__shop {
+                grid-template-columns: repeat(1, 1fr);
+            }
+    }
+    .shop {
+            &__item {
+                &_img {}
+                &_product {}
+                &_rate {}
+                &_price {}
+            }
+            &__content {}
+    }
+    .why {
+            &__container {}
+            &__header {}
+            &__body {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            &__item {
+                &_img {}
+                &_header {}
+                &_text {}
+            }
+    }
+    .reviews {
+            &__container {}
+            &__header {}
+            &__subheader {}
+            &__body {
+                grid-template-columns: repeat(1, 1fr);
             }
             &__item {
                 &_round {}
