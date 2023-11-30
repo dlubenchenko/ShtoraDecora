@@ -465,7 +465,9 @@ body {
     }
     .header {
             &_sticky {}
-            &__container {}
+            &__container {
+                padding: 1.75rem 0;
+            }
             &__logo {}
             &__navigation {}
             &__favorites {}
@@ -600,7 +602,9 @@ body {
     }
     .header {
             &_sticky {}
-            &__container {}
+            &__container {
+                padding: 1rem 0;
+            }
             &__logo {}
             &__navigation {}
             &__favorites {}

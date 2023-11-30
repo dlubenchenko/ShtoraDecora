@@ -440,6 +440,9 @@ body {
   margin-bottom: 1rem;
 }
 @media (min-width: 991px) and (max-width: 1279px) {
+  .header__container {
+    padding: 1.75rem 0;
+  }
   .popular__body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -462,6 +465,9 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 991px) {
+  .header__container {
+    padding: 1rem 0;
+  }
   .logo__content {
     display: none;
   }
