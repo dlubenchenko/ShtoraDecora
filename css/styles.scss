@@ -1,0 +1,405 @@
+@import url('reset.css');
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;800;900&display=swap');
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin content-text {
+    font-family: Lato;
+    color: $black3;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+@mixin headers-text {
+    color: $black1;
+    font-family: Lato;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2.5rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+[class*='__container'] {
+        margin: 0 auto;
+        max-width: 87rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+.wrapper {
+}
+.header {
+		&__container {
+            justify-content: space-between;
+            align-items: center;
+            padding: 3.75rem 0;            
+        }
+		&__logo {
+            align-items: center;
+            gap: 0 0.85rem;
+        }
+		&__navigation {}
+		&__favorites {}
+        &_sticky {
+            // position: sticky; 
+            // top: 0;
+        }
+        background-color: $black1;
+        color: $white1;
+}
+.logo {
+		&__link {}
+		&__image {
+			&_width {
+                width: 3rem;
+            }
+		}
+		&__content {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+		&__header {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+		&__text {
+            font-size: .75rem;
+            letter-spacing: .2rem;
+        }
+}
+.navigation {
+		&__body {
+            gap: 0 2.75rem;
+        }
+		&__item {
+            font-family: Lato;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.25rem;
+        }
+		&__link {
+            &_active {
+                text-decoration: underline;
+            }
+            &:hover {
+                color: $white4;
+            }
+        }
+}
+.favorites {
+		&__liked {
+            align-items: center;
+            gap: 0 0.25rem;
+        }
+		&__image {}
+		&__text {
+            font-family: Lato;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.25rem;
+        }
+}
+.content {
+}
+.welcome {
+		&__container {
+            padding: 7rem 0;
+            min-height: 40rem;
+            margin-bottom: 5.12rem;
+        }
+		&__body {
+			&_text {
+                color: $black1;
+                font-family: Lato;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.75rem;
+            }
+			&_title {
+                color: #2F302C;
+                font-family: Montserrat;
+                font-size: 6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 4.25rem;
+            }
+			&_line {
+                background-color: #2F302C;
+                width: 19.25rem;
+                height: 0.0625rem;
+            }
+			&_subtext {
+                @include content-text
+            }
+            gap: 1.25rem 0;
+            flex-direction: column;
+            max-width: 50%;
+            float: right;
+            background-color: $red6;
+            padding: 2rem;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+    }
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/welcome/01.webp') center 40% / cover no-repeat;
+        
+}
+.popular {
+		&__container {
+            margin-bottom: 5.12rem;
+        }
+		&__body {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.25rem;
+        }
+		&__item {
+            &_active {
+                grid-column: 2/4;
+                display: flex;
+                flex-direction: column-reverse;
+                flex: 1 1 70%;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                background-color: #E6EFEA;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            height: 36.5rem;
+            padding: 3rem;
+            flex: 1 1 40%;
+            background-color: #F7F7F7;
+        }
+		&__image {
+            width: 20rem;
+            &_position {
+                width: 17rem;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+    }
+		&__content {
+			&_header {
+                &:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                    color: $black1;
+                    font-family: Lato;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 1.75rem;
+                }
+            }
+			&_text {
+                @include content-text;
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
+			&_link {
+                position: relative;
+                color: $black3;
+                font-family: Lato;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.25rem;
+                &::after {
+                    content: url('../img/chevron-right.svg');
+                    position: absolute;
+                    top: -.2rem;
+                    right: -1.5rem;
+                }
+            }
+		}
+}
+.featured {
+		&__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5.12rem;
+        }
+		&__header {
+            @include headers-text;
+            margin-bottom: 2.25rem;
+        }
+		&__menu {
+            display: flex;
+            gap: 3rem;
+			&_item {
+                color: $black1;
+                font-family: Lato;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.25rem;
+                &_active {}
+            }
+            margin-bottom: 4.5rem;
+		}
+		&__shop {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            
+        }
+}
+.shop {
+		&__item {
+            &_img {
+                width: 18rem;
+                border: .2rem solid $black1;
+                margin-bottom: 2rem;
+                padding: .5rem;
+                // border-radius: 10%;
+                // -webkit-border-radius: 10%;
+                // -moz-border-radius: 10%;
+                // -ms-border-radius: 10%;
+                // -o-border-radius: 10%;
+}
+			&_product {
+                color: $black1;
+                font-family: Lato;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.25rem;
+            }
+			&_text {}
+			&_rate {}
+			&_price {
+                color: $black1;
+                font-family: Lato;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 1.75rem;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem;
+            background-color: #F6F6F6;
+		}
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: .75rem 0;
+            text-align: center;
+            background-color: #fff;
+            width: 100%;
+            padding: 2rem;
+        }
+}
+.why {
+		&__container {
+            margin-bottom: 5.12rem;
+        }
+		&__header {
+            @include headers-text;
+            text-align: center;
+            margin-bottom: 4.5rem;
+        }
+		&__body {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4.25rem;
+        }
+		&__item {
+			&_img {
+                width: 4rem;
+            }
+			&_header {
+                text-transform: uppercase;
+                color: $black1;
+                font-family: Lato;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.25rem;
+            }
+			&_text {
+                @include content-text()
+            }
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+		}
+}
+.reviews {
+		&__container {
+            min-width: 90%;
+            margin-bottom: 5.12rem;
+        }
+		&__header {
+            @include headers-text;
+            text-align: center;
+            margin-bottom: 2.25rem;
+        }
+		&__subheader {
+            color: var(--black-3, #7E7F7C);
+            text-align: center;
+            font-family: Lato;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.25rem;
+            margin-bottom: 4.5rem;
+        }
+        &__body {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+		&__item {
+            &_round {
+                overflow: hidden;
+                border-radius: 50%;
+                width: 8rem;
+                height: 8rem;
+            }
+			&_img {
+                width: 10rem;
+                padding-right: 2rem;
+                padding-bottom: 5rem;
+                object-fit: cover;
+            }
+			&_rate {}
+			&_review {}
+			&_name {}
+            justify-self: center;
+		}
+}
+.footer {
+		&__container {}
+		&__header {}
+		&__subheader {}
+}
+

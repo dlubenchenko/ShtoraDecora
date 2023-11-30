@@ -1,0 +1,369 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;800;900&display=swap");
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  max-width: 87rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.header {
+  background-color: #2f302c;
+  color: #ffffff;
+}
+.header__container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.75rem 0;
+}
+.header__logo {
+  align-items: center;
+  gap: 0 0.85rem;
+}
+.logo__image_width {
+  width: 3rem;
+}
+.logo__content {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.logo__header {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.logo__text {
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+}
+
+.navigation__body {
+  gap: 0 2.75rem;
+}
+.navigation__item {
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+.navigation__link_active {
+  text-decoration: underline;
+}
+.navigation__link:hover {
+  color: #d4d4d4;
+}
+
+.favorites__liked {
+  align-items: center;
+  gap: 0 0.25rem;
+}
+.favorites__text {
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+.welcome {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/welcome/01.webp") center 40%/cover no-repeat;
+}
+.welcome__container {
+  padding: 7rem 0;
+  min-height: 40rem;
+  margin-bottom: 5.12rem;
+}
+.welcome__body {
+  gap: 1.25rem 0;
+  flex-direction: column;
+  max-width: 50%;
+  float: right;
+  background-color: #fadede;
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.welcome__body_text {
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+.welcome__body_title {
+  color: #2F302C;
+  font-family: Montserrat;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.25rem;
+}
+.welcome__body_line {
+  background-color: #2F302C;
+  width: 19.25rem;
+  height: 0.0625rem;
+}
+.welcome__body_subtext {
+  font-family: Lato;
+  color: #7e7f7c;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.popular__container {
+  margin-bottom: 5.12rem;
+}
+.popular__body {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.25rem;
+}
+.popular__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  height: 36.5rem;
+  padding: 3rem;
+  flex: 1 1 40%;
+  background-color: #F7F7F7;
+}
+.popular__item_active {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1 1 70%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #E6EFEA;
+}
+.popular__image {
+  width: 20rem;
+}
+.popular__image_position {
+  width: 17rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.popular__content_header:not(:last-child) {
+  margin-bottom: 1.5rem;
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.75rem;
+}
+.popular__content_text {
+  font-family: Lato;
+  color: #7e7f7c;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+.popular__content_text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.popular__content_link {
+  position: relative;
+  color: #7e7f7c;
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+.popular__content_link::after {
+  content: url("../img/chevron-right.svg");
+  position: absolute;
+  top: -0.2rem;
+  right: -1.5rem;
+}
+
+.featured__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.12rem;
+}
+.featured__header {
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.5rem;
+  margin-bottom: 2.25rem;
+}
+.featured__menu {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4.5rem;
+}
+.featured__menu_item {
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+.featured__shop {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.shop__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: #F6F6F6;
+}
+.shop__item_img {
+  width: 18rem;
+  border: 0.2rem solid #2f302c;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+.shop__item_product {
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+.shop__item_price {
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.75rem;
+}
+.shop__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem 0;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem;
+}
+
+.why__container {
+  margin-bottom: 5.12rem;
+}
+.why__header {
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+.why__body {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.25rem;
+}
+.why__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.why__item_img {
+  width: 4rem;
+}
+.why__item_header {
+  text-transform: uppercase;
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+.why__item_text {
+  font-family: Lato;
+  color: #7e7f7c;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.reviews__container {
+  min-width: 90%;
+  margin-bottom: 5.12rem;
+}
+.reviews__header {
+  color: #2f302c;
+  font-family: Lato;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+.reviews__subheader {
+  color: var(--black-3, #7E7F7C);
+  text-align: center;
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin-bottom: 4.5rem;
+}
+.reviews__body {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.reviews__item {
+  justify-self: center;
+}
+.reviews__item_round {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+.reviews__item_img {
+  width: 10rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=styles.css.map */
