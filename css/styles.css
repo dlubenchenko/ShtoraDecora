@@ -6,7 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
 
 [class*=__container] {
@@ -29,7 +29,7 @@ body {
 .header__container {
   justify-content: space-between;
   align-items: center;
-  padding: 3.75rem 0;
+  padding: 2.75rem 0;
 }
 .header__logo {
   align-items: center;

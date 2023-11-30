@@ -27,7 +27,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 
 [class*='__container'] {
@@ -48,7 +48,7 @@ body {
 		&__container {
             justify-content: space-between;
             align-items: center;
-            padding: 3.75rem 0;            
+            padding: 2.75rem 0;            
         }
 		&__logo {
             align-items: center;
