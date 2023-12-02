@@ -597,6 +597,11 @@ body {
 
 
 @media (min-width: 320px) and (max-width: 991px) {
+    [class*='__container'] {
+            margin: 0 auto;
+            max-width: 23rem;
+    }
+
     .wrapper {
     }
     .header {
@@ -621,7 +626,9 @@ body {
             &__text {}
     }
     .navigation {
-            &__body {}
+            &__body {
+            flex-direction: column;
+            }
             &__item {}
             &__link {
                 &_active {}
@@ -640,7 +647,9 @@ body {
             &__container {}
             &__body {
                 &_text {}
-                &_title {}
+                &_title {
+                    font-size: 4rem;
+                }
                 &_line {}
                 &_subtext {}
                 justify-content: center;
@@ -728,7 +737,10 @@ body {
     .footer {
             &__container {}
             &__header {}
-            &__contacts {}
+            &__contacts {
+                flex-direction: column;
+                align-items: center;
+            }
     }
     .contacts {
             &__item {}

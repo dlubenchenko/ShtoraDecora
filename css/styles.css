@@ -464,11 +464,18 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 991px) {
+  [class*=__container] {
+    margin: 0 auto;
+    max-width: 23rem;
+  }
   .header__container {
     padding: 1rem 0;
   }
   .logo__content {
     display: none;
+  }
+  .navigation__body {
+    flex-direction: column;
   }
   .favorites__text {
     display: none;
@@ -486,6 +493,9 @@ body {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
   }
+  .welcome__body_title {
+    font-size: 4rem;
+  }
   .popular__body {
     grid-template: 1fr/3fr;
   }
@@ -501,5 +511,9 @@ body {
   }
   .reviews__body {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__contacts {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=styles.css.map */
