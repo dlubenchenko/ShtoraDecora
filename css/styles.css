@@ -465,6 +465,7 @@ body {
 }
 .global-shop__container {
   grid-template-columns: 1fr 3fr;
+  gap: 3.75rem;
 }
 
 .category__header {
@@ -484,6 +485,48 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.welcome_theme_shop {
+  padding: 1rem 0;
+  min-height: 26rem;
+}
+.button-groupe-top {
+  justify-content: space-between;
+  align-items: center;
+}
+.button-groupe-top__on-sale {
+  font-family: Montserrat;
+  font-weight: 600;
+  height: 2.5rem;
+  padding: 0.625rem 1.25rem;
+  background-color: #ce0000;
+  color: #ffffff;
+  margin-right: 0.75rem;
+}
+.button-groupe-top__sort {
+  font-family: Montserrat;
+  font-weight: 600;
+  background-color: #f6f6f6;
+  color: #2f302c;
+  display: inline-flex;
+  height: 2.5rem;
+  text-transform: uppercase;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+}
+.button-groupe-top__text {
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #2f302c;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
 .shop__header {
   color: #2f302c;
   font-family: Raleway;
@@ -500,15 +543,56 @@ body {
   height: 0.375rem;
   margin-bottom: 2.25rem;
 }
+.shop_product-name {
+  color: #2f302c;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+.shop_product-rate {
+  text-align: center;
+}
+.shop_product-price {
+  text-align: center;
+  color: #2f302c;
+  font-family: Raleway;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+.shop__table {
+  margin-top: 2.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.75rem 2.25rem;
+}
+.shop__visual {
+  padding: 6rem 3rem;
+  text-align: center;
+  background-color: #f6f6f6;
+  margin-bottom: 2rem;
+}
+.shop__image {
+  width: 15rem;
+}
+.shop__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
+.shop-filter {
+  margin-bottom: 2.5rem;
+}
 .shop-filter__top {
   justify-content: space-between;
-}
-.shop-filter__minus {
-  width: 2rem;
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.3rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d4d4d4;
 }
 .shop-filter__header {
   color: #2f302c;
@@ -529,6 +613,10 @@ body {
 }
 .shop-filter__item_active {
   color: #2f302c;
+  font-weight: 600;
+}
+.shop-filter__item:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 991px) and (max-width: 1279px) {

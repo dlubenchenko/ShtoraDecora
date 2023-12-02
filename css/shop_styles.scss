@@ -1,0 +1,13 @@
+.welcome {
+    &__container {
+        padding: 1rem 0;
+    }
+    &__body {
+        &_text {}
+        &_title {}
+        &_line {}
+        &_subtext {}
+    }
+}
+.flex {
+}
