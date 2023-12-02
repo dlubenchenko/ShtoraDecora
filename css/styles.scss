@@ -168,7 +168,6 @@ body {
 }
 .popular {
 		&__container {
-            z-index: -1;
             margin-bottom: 5.12rem;
         }
 		&__body {
@@ -186,6 +185,7 @@ body {
                 text-align: center;
                 background-color: #E6EFEA;
             }
+            z-index: -1;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
