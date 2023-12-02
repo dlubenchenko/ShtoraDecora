@@ -554,6 +554,15 @@ body {
     }
 }
 .shop-filter {
+    &__top {
+        justify-content: space-between;
+    }
+    &__minus {
+        width: 2rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: -.3rem
+    }
     &__header {
         @include heading-content-text()
     }

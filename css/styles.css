@@ -501,6 +501,15 @@ body {
   margin-bottom: 2.25rem;
 }
 
+.shop-filter__top {
+  justify-content: space-between;
+}
+.shop-filter__minus {
+  width: 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.3rem;
+}
 .shop-filter__header {
   color: #2f302c;
   font-family: Raleway;
