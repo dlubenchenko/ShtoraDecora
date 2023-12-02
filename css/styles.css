@@ -139,6 +139,7 @@ body {
 
 .popular__container {
   margin-bottom: 5.12rem;
+  overflow: hidden;
 }
 .popular__body {
   grid-template-columns: repeat(4, 1fr);

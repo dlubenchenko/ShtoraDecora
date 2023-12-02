@@ -8,7 +8,7 @@
 }
 
 @mixin content-text {
-    font-family: Lato;
+    font-family: Roboto;
     color: $black3;
     font-size: 1rem;
     font-style: normal;
@@ -18,7 +18,7 @@
 
 @mixin headers-text {
     color: $black1;
-    font-family: Lato;
+    font-family: Roboto;
     font-size: 2rem;
     font-style: normal;
     font-weight: 800;
@@ -89,7 +89,7 @@ body {
             gap: 0 2.75rem;
         }
 		&__item {
-            font-family: Lato;
+            font-family: Roboto;
             font-size: 1rem;
             font-style: normal;
             font-weight: 700;
@@ -111,7 +111,7 @@ body {
         }
 		&__image {}
 		&__text {
-            font-family: Lato;
+            font-family: Roboto;
             font-size: 1rem;
             font-style: normal;
             font-weight: 700;
@@ -129,7 +129,7 @@ body {
 		&__body {
 			&_text {
                 color: $black1;
-                font-family: Lato;
+                font-family: Roboto;
                 font-size: 1.25rem;
                 font-style: normal;
                 font-weight: 700;
@@ -169,6 +169,7 @@ body {
 .popular {
 		&__container {
             margin-bottom: 5.12rem;
+            overflow: hidden;
         }
 		&__body {
             grid-template-columns: repeat(4, 1fr);
@@ -209,7 +210,7 @@ body {
                 &:not(:last-child) {
                     margin-bottom: 1.5rem;
                     color: $black1;
-                    font-family: Lato;
+                    font-family: Roboto;
                     font-size: 1.25rem;
                     font-style: normal;
                     font-weight: 800;
@@ -225,7 +226,7 @@ body {
 			&_link {
                 position: relative;
                 color: $black3;
-                font-family: Lato;
+                font-family: Roboto;
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 500;
@@ -255,7 +256,7 @@ body {
             gap: 3rem;
 			&_item {
                 color: $black1;
-                font-family: Lato;
+                font-family: Roboto;
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 700;
@@ -287,7 +288,7 @@ body {
 }
 			&_product {
                 color: $black1;
-                font-family: Lato;
+                font-family: Roboto;
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 500;
@@ -297,7 +298,7 @@ body {
 			&_rate {}
 			&_price {
                 color: $black1;
-                font-family: Lato;
+                font-family: Roboto;
                 font-size: 1.25rem;
                 font-style: normal;
                 font-weight: 800;
@@ -340,7 +341,7 @@ body {
 			&_header {
                 text-transform: uppercase;
                 color: $black1;
-                font-family: Lato;
+                font-family: Roboto;
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 700;
@@ -369,7 +370,7 @@ body {
 		&__subheader {
             color: var(--black-3, #7E7F7C);
             text-align: center;
-            font-family: Lato;
+            font-family: Roboto;
             font-size: 1rem;
             font-style: normal;
             font-weight: 700;
@@ -401,7 +402,7 @@ body {
 			&_review {
                 color: $black1;
                 text-align: center;
-                font-family: Lato;
+                font-family: Roboto;
                 font-size: 1.25rem;
                 font-style: normal;
                 font-weight: 400;
